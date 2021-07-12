@@ -39,8 +39,16 @@ function MyDiff()
   endif
 endfunction
 
-colors anderson
+set t_Co=256
+set background=dark
+if !has('gui_running')
+  let g:solarized_termcolors=&t_Co
+  let g:solarized_termtrans=1
+endif
+
+colors predawn
 set number
+set relativenumber
 packloadall
 AirlineTheme supernova
 
@@ -63,3 +71,11 @@ set encoding=utf-8
 
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
+retab
+set splitbelow
+set splitright
+let python_highlight_all=1
+
+:command NE NERDTree
+
+let g:airline#extensions#tabline#enabled = 1
