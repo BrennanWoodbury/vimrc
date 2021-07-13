@@ -7,3 +7,4 @@ ctrlp | git clone https://github.com/kien/ctrlp.vim.git
 
 NERDTree | git clone https://github.com/preservim/nerdtree.git
 
+Predawn colorscheme | git clone https://github.com/juanedi/predawn.vim.git
